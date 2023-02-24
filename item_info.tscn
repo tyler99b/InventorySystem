@@ -1,0 +1,45 @@
+[gd_scene load_steps=3 format=3 uid="uid://d0flm08eoqn3n"]
+
+[ext_resource type="Texture2D" uid="uid://cgi85ohcxakod" path="res://inventory/sprites/inner_panel.png" id="1_c2gxp"]
+[ext_resource type="Texture2D" uid="uid://cfyt4tri7ryul" path="res://inventory/sprites/title.png" id="2_n8gpl"]
+
+[node name="ItemInfo" type="NinePatchRect"]
+texture_filter = 1
+offset_right = 68.0
+offset_bottom = 40.0
+texture = ExtResource("1_c2gxp")
+patch_margin_left = 8
+patch_margin_top = 8
+patch_margin_right = 8
+patch_margin_bottom = 8
+
+[node name="Title" type="NinePatchRect" parent="."]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -23.0
+offset_top = -18.0
+offset_right = 21.0
+offset_bottom = 2.0
+grow_horizontal = 2
+texture = ExtResource("2_n8gpl")
+region_rect = Rect2(0, 0, 32, 16)
+patch_margin_left = 8
+patch_margin_top = 6
+patch_margin_right = 8
+patch_margin_bottom = 2
+
+[node name="Label" type="Label" parent="Title"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_top = 2.0
+offset_bottom = 2.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_font_sizes/font_size = 6
+text = "Inventory"
+horizontal_alignment = 1
+vertical_alignment = 1
